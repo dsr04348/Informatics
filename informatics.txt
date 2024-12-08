@@ -1,0 +1,502 @@
+install jupyter lab>> pip install jupyterlab
+launch>> jupyter-lab
+install jupyter notebook>>pip install notebook
+run notebook>>jupyter notebook
+voila install>>pip install voila
+launch>>voila
+
+
+
+input()
+print()
+f' formatted string {function}
+[0:10] first ten character starting from 0-9
+msg.lower()
+msg.upper()
+len(msg)
+msg.find('')
+msg.replace('','')
+'' in msg
+round(x)
+abs(x) always return a positive number
+
+
+/ division return with floating value
+// division return with int value
+% return with reminder value
+* multiple
+** power to exponential
+x=10
+x = x+3 is also same to the augmented assignment operator like x += 3
+print(x)   result will be 13
+
+order of math in python 
+parenthesis()
+exponential **
+multiple or division * /
+addition or substraction + -
+
+import math >>> to import all math function
+print (math.ceil (2.9)) result will be 3
+print(math.floor (2.9))
+
+if condition function
+
+is_hot = False
+is_cold = True
+if is_hot:
+    print("It's a hot day")
+    print("drink lots of water")
+elif is_cold:
+    print("It's a cold day")
+    print("wear warm clothes")
+else:
+    print("It's a lovely day")
+print('Enjoy your day')
+
+
+price_of_house = 1000000
+print(f'price of house is ${price_of_house}')
+buyer_good_credit = False
+if buyer_good_credit:
+    print('your credit is good you have to pay only 10% of downpayment =')
+    down_payment = price_of_house * .1
+else:
+    print('your have poor credit score you have to pay 20% as downpayment =')
+    down_payment = price_of_house * .2
+print(f"down_payment = $ {down_payment}")
+print('Thanks for the visit')
+
+
+has_high_income = False
+has_good_credit = True
+if has_high_income or has_good_credit:
+    print('Eligible for loan')
+else:
+    print('not Eligible for loan')
+
+has_high_income = False
+has_good_credit = True
+if has_high_income and has_good_credit:
+    print('Eligible for loan')
+else:
+    print('not Eligible for loan')
+
+has_criminal_record = True
+has_good_credit = True
+if has_good_credit and not has_criminal_record:
+    print('Eligible for loan')
+else:
+    print('not Eligible for loan')
+
+name = input('name = ')
+if len(name) < 3:
+    print('name must be at least 3 characters')
+elif len(name) > 50:
+    print('name can be a max of 50 characters')
+else:
+    print('name is ok')
+
+comparision > < == >= <=
+
+
+Weight = input('enter your weight =')
+input_unit = input('Lbs(L) or Kgs(K) =')
+print(input_unit)
+if input_unit.upper() == 'L':
+    print(int(Weight) * .45)
+elif input_unit.upper() == 'K':
+    print(int(Weight) / 2.20)
+else:
+    print('wrong unit')
+
+while loops
+
+i=1
+while i <= 5:
+    print(i)
+    i = i + 1
+print('done')
+
+i=1
+while i <= 5:
+    print('*' * i)
+    i = i + 1
+print('done')
+
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input('guess: '))
+    guess_count += 1
+    if guess == secret_number:
+        print('you won!')
+        break
+else:
+    print('Sorry, you loose')
+
+command = ""
+while True:
+    command = input("> ").lower()
+    if command == "start":
+        print("car started")
+    elif command == "stop":
+        print("car stopped")
+    elif command == "help":
+        print("""
+start-- start the car
+stop-- stop the car
+help-- for help
+        """)
+    elif command == "quit":
+        break
+    else:
+        print("not understand")
+
+command = ""
+while True:
+    command = input("> ").lower()
+    if command == "start":
+        print("car started")
+    elif command == "stop":
+        print("car stopped")
+    elif command == "help":
+        print("""
+start-- start the car
+stop-- stop the car
+help-- for help
+        """)
+    elif command == "quit":
+        break
+    else:
+        print("not understand")
+
+
+
+dic_words = Counter(tokens)
+print(type(dic_words))
+dic_words = dict(dic_words)
+print(type(dic_words))
+dic_words
+
+key_ls = list(dic_words.keys())
+len(key_ls)
+
+
+
+import operator
+
+sorted_dic_words = sorted(dic_words.items(), key=operator.itemgetter(1))
+sorted_dic_words
+
+CV_TOP_20 = Counter(tokens).most_common(40)
+for x in CV_TOP_20:
+    print(x)
+
+
+
+
+cmd commands
+#define a function
+def sing_beyonce_lyrics():
+    print("Okay, okay, ladies, now let's get in formation, 'cause I slay")
+    print("Okay, ladies, now let's get in formation, 'cause I slay")
+    print("Prove to me you got some coordination, 'cause I slay")
+    print("Slay trick, or you get eliminated")
+    return 
+#call a function
+sing_beyonce_lyrics()
+
+def sing_personalized_happy_birthday(personalized_name):
+    print("Happy Birthday to you")
+    print("Happy Birthday to you")
+    print(f"Happy Birthday dear {personalized_name}")
+    print("Happy Birthday to you")
+    return 
+sing_personalized_happy_birthday("deepak")
+
+def make_text_shouty(text):
+    shouty_text = text.upper()
+    return shouty_text
+make_text_shouty("I like you")
+
+
+def make_text_shoutier(text):
+    shouty_text = text.upper()
+    shoutier_text = shouty_text + '!!!'
+    return shoutier_text
+make_text_shoutier("I like you")
+
+def calculate_dog_years_age(age):
+    dog_years_age = age * 7
+    return dog_years_age
+
+calculate_dog_years_age(52)
+
+
+def make_tex_whispery(text):
+    whispery_text = text.lower()
+    return whispery_text
+
+make_tex_whispery("I LIKE YOU")
+
+def need_to_print(first_name='deepak', last_name='rajput'):
+    print("I will sing a song")
+    print(f"{first_name} will sing a song")
+    print(f"\n{last_name} will sing a song")
+    return
+need_to_print()
+
+
+sentence = input('Enter a sentence: ')
+print(sentence)
+
+# check data type
+type(sentence)
+
+int_var = 50
+type(int_var)
+float_var = 3.5
+type(float_var)
+
+words = sentence.split(' ')
+print(words)
+type(words)
+print(words)
+
+words.append('am')
+print(words)
+set_var = set(words)
+print(set_var)
+
+# remove the last item from a list
+words.pop()
+print(words)
+
+boolean_var = 'python' in words
+print(boolean_var)
+type(boolean_var)
+
+words_freq = [2, 2, 2, 2, 2]
+
+print("Original key list is : " + str(words))
+print("Original value list is : " + str(words_freq))
+
+# using dictionary comprehension
+# to convert lists to dictionary
+dic_var = {words[i]: words_freq[i] for i in range(len(words))}
+
+print(dic_var)
+type(dic_var)
+
+# using zip()
+# to convert lists to dictionary
+dic_var = dict(zip(words, words_freq))
+
+print(dic_var)
+
+
+print(sentence[0])
+print(sentence[0:10])
+
+# upper/lowercase of a string
+
+lower_sentence = sentence.lower()
+upper_sentence = sentence.upper()
+
+print(lower_sentence)
+print(upper_sentence)
+
+# replace a word
+
+new_sentence = sentence.replace('python', 'Indiana')
+print(new_sentence)
+
+# join a list of items to a string
+print(words)
+print(' '.join(words))
+
+# combine two string
+
+str1 = 'Deepak'
+str1 += ' Rajput'
+print(str1)
+
+multiple
+x = 4
+y = 2
+
+x *y
+
+exponential
+x = 4
+y = 2
+
+x **y
+
+substraction
+print(x)
+x-= 1
+print(x)
+
+multiple
+print(x)
+x *= 2
+print(x)
+
+divide
+print(x)
+print(x/3)
+
+divide only return int
+print(x)
+print(int(x/3))
+
+Word by word print
+for w in words:
+    print(w)
+
+word count in front of word
+for idx, w in enumerate(words):
+    print(str(idx) + ' ' + w, end = ' ')
+
+import os
+
+# get a list of files from a folder
+
+fd_path = './Downloads/exp_fd/exp_fd'
+files = os.listdir(fd_path)
+print(files)
+
+# read a file
+
+txt1 = open(fd_path + '/' + files[1], mode='r', encoding='utf-8').read()
+txt1
+
+txt2 = open(fd_path + '/' + files[2], mode='r', encoding='utf-8').read()
+txt2
+
+# write a file
+
+towrite_txt = 'IUPUI is located in Indianapolis.'
+outfile_path = fd_path + '/' + 'out_sample.txt'
+
+with open(outfile_path, mode='w', encoding='utf-8') as outf:
+    outf.write(towrite_txt)
+outf.close()
+
+
+
+function
+sentence
+words
+def get_words(arg_txt):
+    result = arg_txt.split(' ')
+    return result
+
+tokens = get_words(sentence)
+print(tokens)
+
+### add a hidden argument
+
+def get_words(arg_txt, signal = True):
+    if signal:
+        result = arg_txt.split(' ')
+    else:
+        result = 'Nothing'
+    return result
+
+tokens = get_words(sentence, False)
+print(tokens)
+
+
+Combine textfile
+txt = txt1 + ' ' + txt2
+txt
+
+def get_words(arg_txt):
+    result = arg_txt.split(' ')
+    return result
+First 10 words of file
+tokens = get_words(txt)
+print(len(tokens))
+print(tokens[:10])
+
+tokens = get_words(txt)
+print(len(tokens))
+print(tokens[:5])
+
+# count the frequence of an input word
+
+def count_wd(keyword, word_list):
+    result = word_list.count(keyword)
+    return result
+
+num_kw1 = count_wd('is', tokens)
+print('#is: ', num_kw1)
+
+num_kw2 = count_wd('a', tokens)
+print('#a: ', num_kw2)
+
+from collections import Counter
+
+dic_words = Counter(tokens)
+print(type(dic_words))
+dic_words = dict(dic_words)
+print(type(dic_words))
+dic_words
+
+# Counte the vocabulary size
+
+key_ls = list(dic_words.keys())
+len(key_ls)
+
+short a dic by value
+
+import operator
+
+sorted_dic_words = sorted(dic_words.items(), key=operator.itemgetter(1))
+sorted_dic_words
+
+
+
+for filename in os.listdir(fd_path):
+    if filename.endswith('.txt'):
+        with open(os.path.join(fd_path,filename)) as f:
+              text=f.read()
+              TXT_CV.append(text)
+              a="".join(TXT_CV)
+              CV=a.lower().replace(',','').replace("",'').replace('.','').replace('the','').replace('of','').split()
+              word_freq = Counter(CV)
+              max_freq_cv = word_freq.most_common(20)
+              print(max_freq_cv)
+              with open('./Downloads/assignment1_part1_data/assignment1_part1_data/CV_top20','w') as f:
+                for word, freq in word_freq.most_common(20):
+                    f.write(f'{word} {freq}\n')
+import requests
+from bs4 import BeautifulSoup as bs
+import csv
+ 
+URL = 'https://www.geeksforgeeks.org/page/'
+ 
+soup = bs(req.text, 'html.parser')
+ 
+titles = soup.find_all('div', attrs={'class', 'head'})
+titles_list = []
+ 
+count = 1
+for title in titles:
+    d = {}
+    d['Title Number'] = f'Title {count}'
+    d['Title Name'] = title.text
+    count += 1
+    titles_list.append(d)
+ 
+filename = 'titles.csv'
+with open(filename, 'w', newline='') as f:
+    w = csv.DictWriter(f,['Title Number','Title Name'])
+    w.writeheader()
+     
+    w.writerows(titles_list)
+

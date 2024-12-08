@@ -1,0 +1,28 @@
+import requests
+response = requests.get("https://en.wikipedia.org/wiki/English_words_of_African_origin")
+response
+html_string = response.text
+print(html_string)
+from bs4 import BeautifulSoup
+document = BeautifulSoup(html_string, "html.parser")
+document
+s = document.find('div', attrs={"id":"mw-content-text"})
+content = s.find_all('li')
+print(content)
+for item in s.find_all("ul"):
+    print(item.text)
+
+
+att
+ent
+rel
+select count year =1980
+1-n
+
+f
+high to low
+dia enc demo lab
+left join
+product code
+1-n
+ttf

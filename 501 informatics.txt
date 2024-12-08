@@ -1,0 +1,59 @@
+501 
+unfamiliar Data Noise
+information gpa in mutimedia
+what is informatics
+why informatics
+cs vs informatics
+data
+-symbol set
+-observation items
+-Facts
+information
+-data analysis and interpretation
+-organised data
+knowledge
+jupyter file
+
+github
+miniconda
+command line
+jupyter
+
+
+Corrupted .DS_Store files can prevent OneDrive from syncing correctly. Deleting the corrupted files can help restore normal sync operation.
+
+No data is lost by deleting the corrupted files as Mac Finder only creates .DS_Store files to store viewing options, such as the positions of icons, size of the Finder window, and window backgrounds.
+
+To delete a corrupted .DS_Store file, you will need to use Terminal.app.
+
+Note: You must be logged into macOS as an administrator.
+
+Open a new Finder window and navigate to the Applications folder on the left.
+
+Open the Utilities folder, then double-click the Terminal application.
+
+Give yourself super-user (root) permissions in Terminal so you can use the commands needed to delete .DS_Store files. 
+
+In Terminal, type sudo ls then press Return on your keyboard.
+
+When Terminal prompts you for a password, enter your administrator account password. If you don't have a password, leave it blank.
+
+Note: For security reasons, macOS won't show any sign that you are typing your password. Just type normally, even though nothing shows.
+
+Navigate to the folder that is not syncing correctly.
+
+In Terminal, type cd followed by a space.
+
+Find the folder with the issue but do not open it. Instead, drag its icon into Terminal and watch it complete the path for you, then press Return.
+
+Remove the .DS_Store folder and all its contents.
+
+Caution: Make sure you are deleting the correct folder.
+
+Type rm -f .DS_Store and press Return.
+
+
+
+
+
+
